@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Extension Popup</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download HTML</title>
   <style>
     body {
-      width: 200px;
-      padding: 10px;
       font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+    }
+    .container {
+      text-align: center;
     }
     h1 {
       font-size: 18px;
+      color: #333;
       margin-bottom: 10px;
     }
-    p {
-      margin-bottom: 5px;
-    }
     button {
-      padding: 5px 10px;
       background-color: #007bff;
       color: white;
       border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 14px;
       cursor: pointer;
+      transition: background-color 0.3s;
     }
     button:hover {
       background-color: #0056b3;
@@ -28,10 +39,10 @@
   </style>
 </head>
 <body>
-  <h1>My Extension</h1>
-  <p>This is a popup for my Chrome extension.</p>
-  <button id="clickMe">Click Me</button>
-
+  <div class="container">
+    <h1>Download Page HTML</h1>
+    <button id="downloadHtml">Download HTML</button>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
